@@ -6,15 +6,34 @@
 Welcome to smbtool's documentation!
 ===================================
 
+**smbtool.sh** est un petit script pour gérer ses utilisateurs, groups et partages pour votre samba. 
+
+il va fournir une interface interactive permettant de : 
+
+* Ajouter un utilisateur
+* Supprimer un utilisateur
+* Changer le mot de passe d'un utilisateur
+* Ajouter un groupe
+* Supprimer un groupe
+* Ajouter des utilisateurs dans des groupes
+* Modifier les groupes d'un utilisateur
+* Ajouter un partage
+* Supprimer un partage
+* Activer un partage
+* Désactiver un partage
+* Modifier les groups qui ont accés à un partage
+* Lister les utilisateurs
+* Lister les groupes avec leurs utilisateurs
+* Lister les partages avec leurs groupes
+
+
 Contents:
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   install.rst
+   config.rst
+   #syntax.rst
 
