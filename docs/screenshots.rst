@@ -7,24 +7,22 @@
 Screenshots
 **************
 
-add_share.png  del_users.png  list_group.png
-
-**Menu principale :**
+**Main menu :**
 
 .. image:: img/main_menu.png
 
-**Changer le mot de passe d'un utilisateur :**
+**Change user password :**
 
 .. image:: img/user_password.png
 
-**Supprimer un utilisateur :**
+**Delete users :**
 
 .. image:: img/del_users.png
 
-**Lister les groupes :**
+**List groupe :**
 
 .. image:: img/list_group.png
 
-**Ajouter un partage :**
+**Add share :**
 
 .. image:: img/add_share.png

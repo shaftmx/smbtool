@@ -3,37 +3,34 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to smbtool's documentation!
+smbtool's documentation!
 ===================================
 
-**smbtool.sh** est un petit script pour gérer ses utilisateurs, groups et partages pour votre samba. 
+**smbtool.sh** is a little bash script for manage samba users / groups and share.
+It is for personal use is not ready for production.
 
-il va permettre une interface interactive permettant de : 
+Provides the ability to :
 
-* Ajouter un utilisateur
-* Supprimer un utilisateur
-* Changer le mot de passe d'un utilisateur
-* Ajouter un groupe
-* Supprimer un groupe
-* Ajouter des utilisateurs dans des groupes
-* Modifier les groupes d'un utilisateur
-* Ajouter un partage
-* Supprimer un partage
-* Activer un partage
-* Désactiver un partage
-* Modifier les groups qui ont accés à un partage
-* Lister les utilisateurs
-* Lister les groupes avec leurs utilisateurs
-* Lister les partages avec leurs groupes
+* Add / delete users.
+* Change user's password.
+* Add / delete groups.
+* Add users into groups.
+* Modify user's groups.
+* Add / delete share.
+* Enable / disable share.
+* Manage share access.
+* List users.
+* List groups with users.
+* List share and allowed groups.
 
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
+   :titlesonly:
    :numbered:
 
    install.rst
    config.rst
    screenshots.rst
-

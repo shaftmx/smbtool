@@ -7,54 +7,53 @@
 Configuration
 **************
 
-Configuration du script smbtool
+**Configure the script :**
 
-La configuration du script se fait l'entête en modifiant des valeurs dans des variables.
+You can edit the script and change some value if you want to customize the behavior.
 
-Choix de l'interface "graphique" à utiliser :
+**Change the graphical interface :**
 
 .. code-block:: bash
 
     DIALOG="whiptail" 
 
-ou
+or
 
 .. code-block:: bash
 
     DIALOG="dialog" 
 
-lors du changement de configuration vous avez le choix de faire un restart ou un simple reload samba :
+**Restart or reload the samba server when you change the configuration :**
 
 .. code-block:: bash
 
     SMBOPTION="restart" 
 
-ou
+or
 
 .. code-block:: bash
 
     SMBOPTION="reload" 
 
-Choix de l'emplacement où sera crée les partages :
+**Change the location of the samba shares :**
 
 .. code-block:: bash
 
     ALL_SHARES_PATH="/home/Samba/Shares" 
 
-Emplacement du fichier de log :
+**Change the location of the smbtool log tile :**
 
 .. code-block:: bash
 
     LOGPATH="/tmp/smbtool" 
 
-Propriétaire et groupe systéme des partages samba :
+**System owner of all samba shares :**
 
 .. code-block:: bash
 
     SHARE_OWNERS="root:root" 
 
 .. note::
-
-    l'utilisateur doit être différent de celui qui va accéder aux partages. Ce sont les acl qui vont donner les droits d'accès
-    et non les droits systéme.
+    The user must be different from your samba users who have access to the shares.
+    The **acl** give the access right and not the unix permission.
 
