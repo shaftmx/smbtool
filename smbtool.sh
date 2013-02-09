@@ -11,7 +11,7 @@
 
 ##########   REQUIS   ##########
 # - ACL install
-# /dev/sda2 /home ext3    defaults,acl   0   2
+# /dev/sda2 /home ext4    defaults,acl   0   2
 # 
 # mount -o remount,acl /home
 
@@ -50,10 +50,10 @@ if [ "$DIALOG" = "dialog" ]; then
 fi
 
 
-#	Samba smbpasswd is setup ? # verid si dpkg -l samba-common-bin est la.
+#	Samba smbpasswd is setup ? 
 IS_SETUP=`which smbpasswd`
 if [ -z "$IS_SETUP" ]; then
-	echo "$(date) ... ERREUR smbpasswd not foud"
+	echo "$(date) ... ERREUR smbpasswd not foud (samba-common-bin)"
 	exit 1;
 fi
 
@@ -61,6 +61,13 @@ fi
 IS_SETUP=`which setfacl`
 if [ -z "$IS_SETUP" ]; then
 	echo "$(date) ... ERREUR setfacl not foud"
+	exit 1;
+fi
+
+#	mkpasswd is setup ?
+IS_SETUP=`which mkpasswd`
+if [ -z "$IS_SETUP" ]; then
+	echo "$(date) ... ERREUR mkpasswd not foud (whois)"
 	exit 1;
 fi
 
