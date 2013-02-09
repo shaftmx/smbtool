@@ -7,43 +7,54 @@
 Configuration
 **************
 
-Configuration du script
+Configuration du script smbtool
 
-Quelques Configuration sont possible dans ce script. Le changement çe fait dans l'entête du script en modifiant des valeurs dans des variables.
+La configuration du script se fait l'entête en modifiant des valeurs dans des variables.
 
-Choix de l'interface à utiliser :
+Choix de l'interface "graphique" à utiliser :
 
- DIALOG="whiptail" 
+.. code-block:: bash
 
-ou
-
- DIALOG="dialog" 
-
-Paramétre passé à samba aprés chaques modification de sa configuration
-
- SMBOPTION="restart" 
+    DIALOG="whiptail" 
 
 ou
 
- SMBOPTION="reload" 
+.. code-block:: bash
 
-Emplacement où sera crée les partages samba
+    DIALOG="dialog" 
 
- ALL_SHARES_PATH="/home/Samba/Shares" 
+lors du changement de configuration vous avez le choix de faire un restart ou un simple reload samba :
 
-Emplacement du fichier de log du script smbtool.sh :
+.. code-block:: bash
 
- LOGPATH="/tmp/smbtool" 
+    SMBOPTION="restart" 
 
-Propriétaire et groupe de chaques partage samba :
+ou
 
- SHARE_OWNERS="root:root" 
+.. code-block:: bash
 
+    SMBOPTION="reload" 
 
+Choix de l'emplacement où sera crée les partages :
+
+.. code-block:: bash
+
+    ALL_SHARES_PATH="/home/Samba/Shares" 
+
+Emplacement du fichier de log :
+
+.. code-block:: bash
+
+    LOGPATH="/tmp/smbtool" 
+
+Propriétaire et groupe systéme des partages samba :
+
+.. code-block:: bash
+
+    SHARE_OWNERS="root:root" 
 
 .. note::
 
-    Si vous avez votre partition déjè montée et que vous ne voulez pas rebooter pour avoir l'option acl vous pouvez faire :
-
-    ``mount -o remount,acl /home``
+    l'utilisateur doit être différent de celui qui va accéder aux partages. Ce sont les acl qui vont donner les droits d'accès
+    et non les droits systéme.
 

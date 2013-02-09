@@ -8,7 +8,7 @@ Welcome to smbtool's documentation!
 
 **smbtool.sh** est un petit script pour gérer ses utilisateurs, groups et partages pour votre samba. 
 
-il va fournir une interface interactive permettant de : 
+il va permettre une interface interactive permettant de : 
 
 * Ajouter un utilisateur
 * Supprimer un utilisateur
@@ -35,5 +35,6 @@ Contents:
 
    install.rst
    config.rst
+   screenshots.rst
    #syntax.rst
 
