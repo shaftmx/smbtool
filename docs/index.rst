@@ -36,5 +36,4 @@ Contents:
    install.rst
    config.rst
    screenshots.rst
-   #syntax.rst
 
